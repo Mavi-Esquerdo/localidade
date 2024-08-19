@@ -6,7 +6,11 @@ import {useFonts, Urbanist_400Regular, Urbanist_700Bold} from '@expo-google-font
  
 export default function Home(){
     const router = useRouter();
- 
+
+    const{fontsLoaded} = useFonts({
+        Urbanist_400Regular,
+        Urbanist_700Bold,
+    }) 
     return(
     <View style={styles.container}>
         <Text style={styles.titulo}> Página principal</Text>
